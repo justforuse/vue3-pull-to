@@ -1,0 +1,19 @@
+{
+  "name": "vue3-pull-to",
+  "version": "0.0.1",
+  "description": "Vue 3 pull down to refresh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justforuse/vue3-pull-to.git"
+  },
+  "author": "justforuse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justforuse/vue3-pull-to/issues"
+  },
+  "homepage": "https://github.com/justforuse/vue3-pull-to#readme"
+}
