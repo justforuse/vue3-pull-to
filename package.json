@@ -2,10 +2,20 @@
   "name": "vue3-pull-to",
   "version": "0.0.1",
   "description": "Vue 3 pull down to refresh",
-  "main": "index.js",
+  "type": "module",
+  "files": ["lib", "src"],
+  "main": "./lib/vue3-pull-to.umd.js",
+  "module": "./lib/vue3-pull-to.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/vue3-pull-to.mjs",
+      "require": "./lib/vue3-pull-to.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:site": "vite build",
+    "build:lib": "vite build -c vite.config.lib.js",
     "preview": "vite preview"
   },
   "repository": {
@@ -20,6 +30,7 @@
   "homepage": "https://github.com/justforuse/vue3-pull-to#readme",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
+    "sass": "^1.79.5",
     "vite": "^5.4.8",
     "vue": "^3.5.11"
   },

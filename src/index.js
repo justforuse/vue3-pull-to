@@ -1,3 +1,3 @@
-import PullTo from './vue-pull-to.vue'
+import PullTo from './vue3-pull-to.vue'
 
 export default PullTo
