@@ -13,7 +13,11 @@ Doc for Vue3-pull-to.
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vue3-pull-to"><img src="https://img.shields.io/npm/v/vue3-pull-to" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/vue3-pull-to"><img src="https://img.shields.io/npm/dm/vue3-pull-to" alt="npm"></a>
+  <a href="https://www.npmjs.com/package/vue3-pull-to"><img src="https://img.shields.io/npm/l/vue3-pull-to" alt="npm"></a>
 </p>
+
+> Fork from [vue-pull-to](https://github.com/stackjie/vue-pull-to), and keep the same api.
 
 
 ## How to use
@@ -21,3 +25,7 @@ Doc for Vue3-pull-to.
 ```sh
 npm i vue3-pull-to
 ```
+
+## Demo
+
+[Online demo](https://vue3-pull-to.vercel.app/)
