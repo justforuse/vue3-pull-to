@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:site": "vite build",
+    "build:site": "pnpm run build:lib && vite build",
     "build:lib": "vite build -c vite.config.lib.js",
     "preview": "vite preview"
   },
