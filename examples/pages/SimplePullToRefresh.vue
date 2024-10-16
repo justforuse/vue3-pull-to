@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import PullTo from '@'
+import PullTo from '@lib'
 
 export default {
   name: 'simple-pull-to-refresh',

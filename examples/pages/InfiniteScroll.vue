@@ -16,30 +16,8 @@
   </pull-to>
 </template>
 
-<style scoped lang="scss">
-  .loading-bar {
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-  }
-
-  .icon-loading {
-    transform: rotate(0deg);
-    animation-name: loading;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes loading
-  {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-  }
-</style>
-
-<script type="text/babel">
-  import PullTo from '@';
+<script>
+  import PullTo from '@lib';
 
   export default {
     name: 'infinite-scroll',
@@ -66,3 +44,25 @@
     }
   };
 </script>
+
+<style scoped lang="scss">
+  .loading-bar {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .icon-loading {
+    transform: rotate(0deg);
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes loading
+  {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+</style>

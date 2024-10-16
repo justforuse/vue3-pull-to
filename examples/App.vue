@@ -5,6 +5,25 @@
   </div>
 </template>
 
+<script>
+import AppHeader from "./components/AppHeader.vue";
+import RouterView from "./components/RouterView.vue";
+
+export default {
+  data() {
+    return {
+      currentRoute: window.location.pathname,
+    };
+  },
+  components: { AppHeader, RouterView },
+  created() {
+    window.addEventListener("popstate", () => {
+      this.currentRoute = window.location.pathname;
+    });
+  },
+};
+</script>
+
 <style lang="scss">
 #app {
   background: #f6f6f6;
@@ -78,22 +97,3 @@ a {
   background: #f6f6f6;
 }
 </style>
-
-<script>
-import AppHeader from "./components/AppHeader.vue";
-import RouterView from "./components/RouterView.vue";
-
-export default {
-  data() {
-    return {
-      currentRoute: window.location.pathname,
-    };
-  },
-  components: { AppHeader, RouterView },
-  created() {
-    window.addEventListener("popstate", () => {
-      this.currentRoute = window.location.pathname;
-    });
-  },
-};
-</script>

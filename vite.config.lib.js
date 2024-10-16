@@ -17,7 +17,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, "src/index.js"),
       name: "Vue3PullTo",
       // the proper extensions will be added
-      fileName: "vue3-pull-to",
+      fileName: "index",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

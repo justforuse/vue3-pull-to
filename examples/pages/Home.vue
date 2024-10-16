@@ -46,6 +46,19 @@
   </section>
 </template>
 
+<script>
+  import PullTo from '@lib';
+  import RouterLink from '../components/RouterLink.vue';
+
+  export default {
+    name: 'home',
+    components: {
+      RouterLink,
+      PullTo
+    }
+  };
+</script>
+
 <style scoped lang="scss">
   .wrapper {
     display: flex;
@@ -110,16 +123,3 @@
     }
   }
 </style>
-
-<script type="text/babel">
-  import PullTo from '@';
-  import RouterLink from '../components/RouterLink.vue';
-
-  export default {
-    name: 'home',
-    components: {
-      RouterLink,
-      PullTo
-    }
-  };
-</script>

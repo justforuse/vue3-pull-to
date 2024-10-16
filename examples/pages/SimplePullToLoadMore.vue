@@ -23,8 +23,8 @@
   </pull-to>
 </template>
 
-<script type="text/babel">
-import PullTo from '@'
+<script>
+import PullTo from '@lib'
 
 export default {
   name: 'simple-pull-to-loadmore',
