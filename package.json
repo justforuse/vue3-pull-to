@@ -2,41 +2,52 @@
   "name": "vue3-pull-to",
   "version": "0.1.0",
   "description": "Vue 3 pull down to refresh",
+  "license": "MIT",
+  "author": "justforuse",
+  "homepage": "https://github.com/justforuse/vue3-pull-to#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justforuse/vue3-pull-to.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justforuse/vue3-pull-to/issues"
+  },
   "type": "module",
-  "files": [
-    "lib",
-    "src"
-  ],
-  "main": "./lib/index.umd.js",
-  "module": "./lib/index.mjs",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
       "require": "./lib/index.umd.js"
     }
   },
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.mjs",
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
     "dev": "vite",
+    "build:lib": "rollup -c",
     "build:site": "pnpm run build:lib && vite build",
-    "build:lib": "vite build -c vite.config.lib.js",
     "preview": "vite preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justforuse/vue3-pull-to.git"
-  },
-  "author": "justforuse",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/justforuse/vue3-pull-to/issues"
-  },
-  "homepage": "https://github.com/justforuse/vue3-pull-to#readme",
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.4",
-    "sass": "^1.79.5",
-    "vite": "^5.4.8"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
-  }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "rollup": "^4.24.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.79.5",
+    "vite": "^5.4.8"
+  },
+  "keywords": [
+    "component",
+    "pull",
+    "refresh",
+    "vue",
+    "vue 3"
+  ]
 }

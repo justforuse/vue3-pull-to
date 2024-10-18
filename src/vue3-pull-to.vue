@@ -56,7 +56,6 @@
 <script>
 import { throttle, create, PASSIVE_OPTS } from './utils'
 import { TOP_DEFAULT_CONFIG, BOTTOM_DEFAULT_CONFIG } from './config'
-
 const LOADED_PREFIX = 'loaded-'
 
 function setTransition(style, prop, dur, delay) {
