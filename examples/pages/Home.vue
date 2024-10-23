@@ -10,36 +10,36 @@
     <pull-to class="scroller-view">
       <ul class="list">
         <li>
-          <router-link href="/bounce-scroll">
+          <DemoLink href="/bounce-scroll">
             Bounce scroll
             <svg class="icon icon-arrow" aria-hidden="true">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
-          </router-link>
+          </DemoLink>
         </li>
         <li>
-          <router-link href="/simple-pullto-refresh">
+          <DemoLink href="/simple-pullto-refresh">
             Simple pull to refresh
             <svg class="icon icon-arrow" aria-hidden="true">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
-          </router-link>
+          </DemoLink>
         </li>
         <li>
-          <router-link href="/simple-pullto-loadmore">
+          <DemoLink href="/simple-pullto-loadmore">
             Simple pull to load more
             <svg class="icon icon-arrow" aria-hidden="true">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
-          </router-link>
+          </DemoLink>
         </li>
         <li>
-          <router-link href="/infinite-scroll">
+          <DemoLink href="/infinite-scroll">
             Infinite scroll
             <svg class="icon icon-arrow" aria-hidden="true">
               <use xlink:href="#icon-arrow-right"></use>
             </svg>
-          </router-link>
+          </DemoLink>
         </li>
       </ul>
     </pull-to>
@@ -48,12 +48,12 @@
 
 <script>
   import PullTo from '@lib';
-  import RouterLink from '../components/RouterLink.vue';
+  import DemoLink from '../components/DemoLink.vue';
 
   export default {
     name: 'home',
     components: {
-      RouterLink,
+      DemoLink,
       PullTo
     }
   };

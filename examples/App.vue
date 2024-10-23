@@ -1,13 +1,12 @@
 <template>
   <AppHeader />
   <div class="view-wrapper">
-    <RouterView :current-route="currentRoute" default-route="/" />
+    <RouterView />
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import RouterView from "./components/RouterView.vue";
 
 export default {
   data() {
@@ -15,7 +14,7 @@ export default {
       currentRoute: window.location.pathname,
     };
   },
-  components: { AppHeader, RouterView },
+  components: { AppHeader },
   created() {
     window.addEventListener("popstate", () => {
       this.currentRoute = window.location.pathname;

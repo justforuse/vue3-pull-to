@@ -41,7 +41,8 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-vue": "^6.0.0",
     "sass": "^1.79.5",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vue-router": "^4.4.5"
   },
   "keywords": [
     "component",
